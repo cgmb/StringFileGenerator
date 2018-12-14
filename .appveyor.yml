@@ -1,0 +1,19 @@
+version: '{build}'
+
+image:
+  - Visual Studio 2013
+  - Visual Studio 2015
+  - Visual Studio 2017
+  - Ubuntu1604
+  - Ubuntu1804
+
+platform:
+  - x86
+  - x64
+
+build_script:
+  - cmake -H. -Bbuild
+  - cmake --build build
+
+test_script:
+  - build/example
