@@ -1,6 +1,7 @@
+#include <stdio.h>
 #include <string.h>
 #include <array>
-#include <algorithm>
+#include <numeric>
 
 extern const char* const k_books_on_liberty_txt;
 
