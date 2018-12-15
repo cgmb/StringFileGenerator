@@ -11,7 +11,7 @@ function(add_string_file sources input)
   set(output_file "${CMAKE_CURRENT_BINARY_DIR}/${input}.cpp")
   set(script "${CMAKE_CURRENT_SOURCE_DIR}/cmake/CppStr.cmake")
   add_custom_command(OUTPUT "${output_file}"
-    COMMAND ${CMAKE_COMMAND} -Dvar=${var} -Ddelmiter=*** -Dinfile=${input_file} -Doutfile=${output_file} -P ${script}
+    COMMAND ${CMAKE_COMMAND} -Dvar=${var} -Ddelimiter=*** -Dinfile=${input_file} -Doutfile=${output_file} -P ${script}
     MAIN_DEPENDENCY "${input_file}"
     DEPENDS "${script}"
     VERBATIM
