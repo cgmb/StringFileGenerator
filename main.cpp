@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include <string.h>
 #include <array>
 #include <numeric>
 
 extern const char* const k_books_on_liberty_txt;
+extern const size_t k_books_on_liberty_txt_len;
 
 int main() {
   std::array<size_t, 26> histogram = {};
-  size_t length = strlen(k_books_on_liberty_txt);
+  size_t length = k_books_on_liberty_txt_len;
   for (size_t i = 0; i < length; ++i) {
     char c = k_books_on_liberty_txt[i];
     if ('a' <= c || c <= 'z') {
