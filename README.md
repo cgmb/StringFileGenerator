@@ -10,4 +10,5 @@ An example project for turning files into C++11 raw strings using CMake.
 
     cmake -H. -Bbuild     # configure
     cmake --build build   # build
-    build/example         # run
+    build/example         # run (Linux)
+    build\Debug\example   # run (Windows)

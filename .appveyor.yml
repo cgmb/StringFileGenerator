@@ -16,4 +16,5 @@ build_script:
   - cmake --build build
 
 test_script:
-  - build/example
+  - sh: build/example
+  - cmd: build\Debug\example
