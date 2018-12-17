@@ -10,9 +10,9 @@ int main() {
   size_t length = k_books_on_liberty_txt_len;
   for (size_t i = 0; i < length; ++i) {
     char c = k_books_on_liberty_txt[i];
-    if ('a' <= c || c <= 'z') {
+    if ('a' <= c && c <= 'z') {
       histogram[c-'a']++;
-    } else if ('A' <= c || c <= 'Z') {
+    } else if ('A' <= c && c <= 'Z') {
       histogram[c-'A']++;
     }
   }
