@@ -13,7 +13,7 @@ if (UNIX)
 endif()
 
 set(SOURCES
-  main.cpp
+  example.cpp
 )
 
 add_string_files(STRINGS
